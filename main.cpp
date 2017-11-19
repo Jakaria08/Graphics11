@@ -9,6 +9,7 @@
 #include "hitable_list.h"
 #include "float.h"
 #include "camera.h"
+#include "material.h"
 
 using namespace std;
 
@@ -19,26 +20,26 @@ float random_value()
   return r;
 }
 
-glm::vec3 random_in_unit_sphere()
-{
-    glm::vec3 p;
 
-    do
-    {
-        p = 2.0f*glm::vec3((float)rand()/RAND_MAX, (float)rand()/RAND_MAX, (float)rand()/RAND_MAX) - glm::vec3(1.0, 1.0, 1.0);
-    } while((glm::length(p)*glm::length(p)) >= 1.0f);
-    return p;
-}
-
-glm::vec3 color(const ray& r, hitable *world)
+glm::vec3 color(const ray& r, hitable *world, int depth)
 {
     hit_record rec;
 
-    if(world->hit(r, 0.0, FLT_MAX, rec))
+    if(world->hit(r, 0.001, FLT_MAX, rec))
     {
-        glm::vec3 target = rec.p + rec.normal + random_in_unit_sphere();
-        return 0.5f*color (ray(rec.p, target-rec.p), world);
+        ray scattered;
+        glm::vec3 attenuation;
+
+        if(depth < 50 && rec.mat_ptr->scatter(r, rec, attenuation, scattered))
+        {
+            return attenuation*color(scattered, world, depth+1);
+        }
+        else
+        {
+            return glm::vec3(0,0,0);
+        }
     }
+
     else
     {
         glm::vec3 unit_direction = glm::normalize(r.direction());
@@ -57,12 +58,14 @@ int main()
 
     cout << "P3\n" << nx << " " << ny << "\n255\n";
 
-    hitable *list[2];
+    hitable *list[4];
 
-    list[0] = new sphere(glm::vec3(0,0,-1), 0.5);
-    list[1] = new sphere(glm::vec3(0,-100.5,-1), 100);
+    list[0] = new sphere(glm::vec3(0,0,-1), 0.5, new lambertian(glm::vec3(0.8, 0.3, 0.3)));
+    list[1] = new sphere(glm::vec3(0,-100.5,-1), 100, new lambertian(glm::vec3(0.8, 0.8, 0.0)));
+    list[2] = new sphere(glm::vec3(1,0,-1), 0.5, new metal(glm::vec3(0.8, 0.6, 0.2)));
+    list[3] = new sphere(glm::vec3(-1,0,-1), 0.5, new metal(glm::vec3(0.8, 0.8, 0.8)));
 
-    hitable *world = new hitable_list(list,2);
+    hitable *world = new hitable_list(list,4);
     camera cam;
 
 
@@ -78,9 +81,10 @@ int main()
 
                 ray r = cam.get_ray(u,v);
                 //glm::vec3 p = r.point_at_parameter(2.0);
-                col += color(r,world);
+                col += color(r,world,0);
             }
             col /= float(ns);
+            col = glm::vec3(sqrt(col[0]), sqrt(col[1]), sqrt(col[2]));
 
             int ir = int(255.99*col[0]);
             int ig = int(255.99*col[1]);
