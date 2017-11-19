@@ -1,0 +1,1534 @@
+# depslib dependency file v1.0
+1510998345 source:h:\onedrive\cmput-511\project\graphics_project1\main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<stdlib.h>
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+	"ray.h"
+	"sphere.h"
+	"hitable_list.h"
+	"float.h"
+	"camera.h"
+
+1502920120 
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1502920120 pe_vec3.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1502920120 .inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1502920120 hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1502920120 "
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1502920120 latform.h"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1502920120 .h>
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\_swizzle.hpp
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\_swizzle_func.hpp
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec3.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1502920120 pp"
+
+1483598564 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1502920120 pe_mat.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1502920120 .hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1502920120 pe_vec2.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec2.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1502920120 pe_vec4.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1502920120 _simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec4_simd.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1502920120 pe_mat2x2.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1502920120 x2.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1502920120 ix.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1502920120 ix.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1502920120 pe_mat2x3.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1502920120 x3.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat2x3.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1502920120 pe_mat2x4.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1502920120 x4.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat2x4.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1502920120 pe_mat3x2.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat3x2.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1502920120 pe_mat3x3.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1502920120 pe_mat3x4.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat3x4.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1502920120 pe_mat4x2.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x2.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1502920120 pe_mat4x3.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x3.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1502920120 pe_mat4x4.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1502920120 x4_simd.inl"
+
+1483598564 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_mat4x4_simd.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1502920120 ix_simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1502920120 nc_geometric.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1502920120 etric.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1502920120 etric_simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1502920120 nential.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_vec1.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1502920120 nential_simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1502920120 or_relational.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1502920120 or_relational_simd.inl"
+
+1483598564 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_vector_relational_simd.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1502920120 xponential.h"
+
+1483598566 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\simd\exponential.h
+	"platform.h"
+
+1502920120 h"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1502920120 on.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1502920120 on_simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\simd\common.h
+	"platform.h"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1502920120 eometric.h"
+
+1483598566 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\simd\geometric.h
+	"common.h"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1502920120 atrix.h"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1502920120 .h"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1502920120 nc_trigonometric.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1502920120 onometric.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1502920120 onometric_simd.inl"
+
+1483598564 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_trigonometric_simd.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1502920120 nc_exponential.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1502920120 nc_common.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1502920120 nc_packing.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1502920120 ing.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1502920120 ing_simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\type_half.inl
+
+1483598564 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_packing_simd.inl
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1502920120 nc_matrix.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1502920120 nc_vector_relational.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1502920120 nc_integer.hpp"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1502920120 ger.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1502920120 ger_simd.inl"
+
+1502920120 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1502920120 nteger.h"
+
+1483598566 h:\onedrive\cmput-511\project\graphics_project1\glm\glm\simd\integer.h
+
+1510943879 h:\onedrive\cmput-511\project\graphics_project1\ray.h
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510990014 lm.hpp"
+
+1510989993 h:\onedrive\cmput-511\project\graphics_project1\sphere.h
+	"hitable.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989979 h:\onedrive\cmput-511\project\graphics_project1\hitable.h
+	"ray.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989983 h:\onedrive\cmput-511\project\graphics_project1\hitable_list.h
+	"hitable.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510990014 h:\onedrive\cmput-511\project\graphics_project1\camera.h
+	"ray.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510999258 source:/home/jakaria/Project/Graphics_Project1/main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<stdlib.h>
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+	"ray.h"
+	"sphere.h"
+	"hitable_list.h"
+	"float.h"
+	"camera.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/vec3.hpp
+	"detail/type_vec3.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/precision.hpp
+	"setup.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/simd/platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/_swizzle.hpp
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/_swizzle_func.hpp
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec3.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1483598564 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/_fixes.hpp
+	<cmath>
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_float.hpp
+	"setup.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat.hpp
+	"precision.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/vec2.hpp
+	"detail/type_vec2.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec2.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/vec4.hpp
+	"detail/type_vec4.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec4.inl
+	"type_vec4_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec4_simd.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat2x2.inl
+	"func_matrix.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat2x3.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat2x4.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat3x2.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat3x3.inl
+	"func_matrix.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat3x4.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x2.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x3.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1483598564 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_mat4x4_simd.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/geometric.hpp
+	"detail/func_geometric.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_vec1.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1483598564 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_vector_relational_simd.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1483598566 /home/jakaria/Project/Graphics_Project1/glm/glm/simd/exponential.h
+	"platform.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/simd/common.h
+	"platform.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1483598566 /home/jakaria/Project/Graphics_Project1/glm/glm/simd/geometric.h
+	"common.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/simd/matrix.h
+	"geometric.h"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1483598564 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_trigonometric_simd.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/exponential.hpp
+	"detail/func_exponential.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/common.hpp
+	"detail/func_common.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/packing.hpp
+	"detail/func_packing.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/type_half.inl
+
+1483598564 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_packing_simd.inl
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/matrix.hpp
+	"detail/func_matrix.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/integer.hpp
+	"detail/func_integer.hpp"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1502920120 /home/jakaria/Project/Graphics_Project1/glm/glm/detail/func_integer_simd.inl
+	"../simd/integer.h"
+
+1483598566 /home/jakaria/Project/Graphics_Project1/glm/glm/simd/integer.h
+
+1510943879 /home/jakaria/Project/Graphics_Project1/ray.h
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989993 /home/jakaria/Project/Graphics_Project1/sphere.h
+	"hitable.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989979 /home/jakaria/Project/Graphics_Project1/hitable.h
+	"ray.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989983 /home/jakaria/Project/Graphics_Project1/hitable_list.h
+	"hitable.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510990014 /home/jakaria/Project/Graphics_Project1/camera.h
+	"ray.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1424046684 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/dummy.cpp
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+	<limits>
+	<glm/vec3.hpp>
+	<glm/geometric.hpp>
+	<glm/vec3.hpp>
+	<glm/vec4.hpp>
+	<glm/mat4x4.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/vec2.hpp>
+	<glm/packing.hpp>
+	<glm/integer.hpp>
+	<glm/gtc/type_precision.hpp>
+	<glm/vec3.hpp>
+	<glm/geometric.hpp>
+	<glm/exponential.hpp>
+	<glm/gtc/random.hpp>
+
+1424046684 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/glm.cpp
+	<glm/glm.hpp>
+	<glm/gtc/quaternion.hpp>
+	<glm/gtx/dual_quaternion.hpp>
+
+1511042662 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<stdlib.h>
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+	"ray.h"
+	"sphere.h"
+	"hitable_list.h"
+	"float.h"
+	"camera.h"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/vec3.hpp
+	"detail/type_vec3.hpp"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1438493904 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1441067362 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/precision.hpp
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1441598736 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	<__config>
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/_swizzle.hpp
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/_swizzle_func.hpp
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec3.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/_fixes.hpp
+	<cmath>
+
+1438493738 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_float.hpp
+	"setup.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat.hpp
+	"precision.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/vec2.hpp
+	"detail/type_vec2.hpp"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec2.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/vec4.hpp
+	"detail/type_vec4.hpp"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1441067694 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec4_sse2.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec4_avx.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec4_avx2.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1440893028 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1438499610 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat2x2.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1438497270 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1438499538 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat2x3.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1438497226 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1438499374 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat2x4.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1438497086 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1438499220 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat3x2.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1438497028 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1438499104 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat3x3.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1438496896 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1438498992 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat3x4.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1438496818 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1438498818 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat4x2.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1438496760 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1438499334 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat4x3.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1438496700 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1438498796 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_mat4x4.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1441080638 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1441081248 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1441596990 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_vec1.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/exponential.hpp
+	"detail/func_exponential.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_vector_relational.inl
+	<limits>
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/common.hpp
+	"detail/func_common.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/packing.hpp
+	"detail/func_packing.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1437290918 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/type_half.inl
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/geometric.hpp
+	"detail/func_geometric.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/matrix.hpp
+	"detail/func_matrix.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/integer.hpp
+	"detail/func_integer.hpp"
+
+1424046684 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1426563904 /home/jakaria/Project/Ubuntu version/Graphics_Project1/glm/glm/detail/func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1510943879 /home/jakaria/Project/Ubuntu version/Graphics_Project1/ray.h
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989993 /home/jakaria/Project/Ubuntu version/Graphics_Project1/sphere.h
+	"hitable.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989979 /home/jakaria/Project/Ubuntu version/Graphics_Project1/hitable.h
+	"ray.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510989983 /home/jakaria/Project/Ubuntu version/Graphics_Project1/hitable_list.h
+	"hitable.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
+1510990014 /home/jakaria/Project/Ubuntu version/Graphics_Project1/camera.h
+	"ray.h"
+	"glm/glm/vec3.hpp"
+	"glm/glm/glm.hpp"
+
