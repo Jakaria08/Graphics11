@@ -8,14 +8,16 @@ struct hit_record;
 
 bool refract(const glm::vec3& v, const glm::vec3& n, float ni_over_nt, glm::vec3& refracted) {
     glm::vec3 uv = glm::normalize(v);
-    float dt = glm::dot(uv, n);
-    float discriminant = 1.0 - ni_over_nt*ni_over_nt*(1-dt*dt);
-    if (discriminant > 0) {
-        refracted = (float)ni_over_nt*(uv - n*(float)dt) - n*(float)sqrt(discriminant);
-        return true;
+    //float dt = glm::dot(uv, n);
+    //float discriminant = 1.0 - ni_over_nt*ni_over_nt*(1-dt*dt);
+    glm::vec3 test = glm::refract(uv, n, ni_over_nt);
+    if (test == glm::vec3(0.0,0.0,0.0)) {
+        //refracted = (float)ni_over_nt*(uv - n*(float)dt) - n*(float)sqrt(discriminant);
+        return false;
     }
     else
-        return false;
+        refracted = test;
+        return true;
 }
 
 glm::vec3 random_in_unit_sphere()
@@ -68,7 +70,7 @@ class dielectric : public material {
              glm::vec3 outward_normal;
              glm::vec3 reflected = reflect(r_in.direction(), rec.normal);
              float ni_over_nt;
-             attenuation = glm::vec3(1.0, 1.0, 0.0);
+             attenuation = glm::vec3(1.0, 1.0, 1.0);
              glm::vec3 refracted;
 
              if (glm::dot(r_in.direction(), rec.normal) > 0) {
