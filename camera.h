@@ -4,31 +4,50 @@
 #include "ray.h"
 #include "glm/glm/vec3.hpp"
 #include "glm/glm/glm.hpp"
+#include <math.h>
+
+glm::vec3 random_in_unit_disk() {
+    glm::vec3 p;
+    do {
+        p = float(2.0)*glm::vec3(drand48(),drand48(),0) - glm::vec3(1,1,0);
+    } while (glm::dot(p,p) >= 1.0);
+    return p;
+}
 
 class camera
 {
 public:
-    camera(float vfov, float aspect)
+    camera(glm::vec3 lookfrom, glm::vec3 lookat, glm::vec3 vup,float vfov, float aspect, float aperture, float focus_dist)
     {
         float theta = vfov*M_PI/180;
         float half_height = tan(theta/2);
         float half_width = aspect * half_height;
 
-        lower_left_corner = glm::vec3(-half_width, -half_height, -1.0);
-        horizontal = glm::vec3(2.0*half_width, 0.0, 0.0);
-        vertical = glm::vec3(0.0, 2.0*half_height, 0.0);
-        origin = glm::vec3(0.0, 0.0, 0.0);
+        origin = lookfrom;
+        w = glm::normalize(lookfrom - lookat);
+        u = glm::normalize(cross(vup, w));
+        v = glm::cross(w, u);
+
+        lower_left_corner = origin  - half_width*focus_dist*u -half_height*focus_dist*v - focus_dist*w;
+        horizontal = 2*half_width*focus_dist*u;
+        vertical = 2*half_height*focus_dist*v;
+
     }
 
-    ray get_ray(float u, float v)
+    ray get_ray(float s, float t)
     {
-        return ray(origin, lower_left_corner + u*horizontal + v*vertical - origin);
+        glm::vec3 rd = lens_radius*random_in_unit_disk();
+        glm::vec3 offset = u * rd.x + v * rd.y;
+        return ray(origin + offset, lower_left_corner + s*horizontal + t*vertical - origin - offset);
     }
 
     glm::vec3 lower_left_corner;
     glm::vec3 horizontal;
     glm::vec3 vertical;
     glm::vec3 origin;
+
+    glm::vec3 u, v, w;
+    float lens_radius;
 };
 
 #endif // CAMERA_H_INCLUDED
