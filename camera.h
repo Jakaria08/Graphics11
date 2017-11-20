@@ -8,11 +8,15 @@
 class camera
 {
 public:
-    camera()
+    camera(float vfov, float aspect)
     {
-        lower_left_corner = glm::vec3(-2.0, -1.0, -1.0);
-        horizontal = glm::vec3(4.0, 0.0, 0.0);
-        vertical = glm::vec3(0.0, 2.0, 0.0);
+        float theta = vfov*M_PI/180;
+        float half_height = tan(theta/2);
+        float half_width = aspect * half_height;
+
+        lower_left_corner = glm::vec3(-half_width, -half_height, -1.0);
+        horizontal = glm::vec3(2.0*half_width, 0.0, 0.0);
+        vertical = glm::vec3(0.0, 2.0*half_height, 0.0);
         origin = glm::vec3(0.0, 0.0, 0.0);
     }
 
@@ -21,10 +25,10 @@ public:
         return ray(origin, lower_left_corner + u*horizontal + v*vertical - origin);
     }
 
-     glm::vec3 lower_left_corner;
-     glm::vec3 horizontal;
-     glm::vec3 vertical;
-     glm::vec3 origin;
+    glm::vec3 lower_left_corner;
+    glm::vec3 horizontal;
+    glm::vec3 vertical;
+    glm::vec3 origin;
 };
 
 #endif // CAMERA_H_INCLUDED
