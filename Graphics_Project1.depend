@@ -1102,7 +1102,7 @@
 	<glm/gtc/quaternion.hpp>
 	<glm/gtx/dual_quaternion.hpp>
 
-1511374742 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/main.cpp
+1511375983 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/main.cpp
 	<iostream>
 	<fstream>
 	<math.h>
@@ -1534,7 +1534,7 @@
 	"glm/glm/glm.hpp"
 	<math.h>
 
-1511374823 /home/jakaria/Project/Ubuntu version/Graphics_Project1/material.h
+1511374882 /home/jakaria/Project/Ubuntu version/Graphics_Project1/material.h
 	"ray.h"
 	"hitable.h"
 
