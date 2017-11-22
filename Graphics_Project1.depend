@@ -1102,7 +1102,7 @@
 	<glm/gtc/quaternion.hpp>
 	<glm/gtx/dual_quaternion.hpp>
 
-1511166212 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/main.cpp
+1511374742 source:/home/jakaria/Project/Ubuntu version/Graphics_Project1/main.cpp
 	<iostream>
 	<fstream>
 	<math.h>
@@ -1509,7 +1509,7 @@
 	<intrin.h>
 	<limits>
 
-1510943879 /home/jakaria/Project/Ubuntu version/Graphics_Project1/ray.h
+1511373222 /home/jakaria/Project/Ubuntu version/Graphics_Project1/ray.h
 	"glm/glm/vec3.hpp"
 	"glm/glm/glm.hpp"
 
@@ -1528,13 +1528,13 @@
 	"glm/glm/vec3.hpp"
 	"glm/glm/glm.hpp"
 
-1511164205 /home/jakaria/Project/Ubuntu version/Graphics_Project1/camera.h
+1511374742 /home/jakaria/Project/Ubuntu version/Graphics_Project1/camera.h
 	"ray.h"
 	"glm/glm/vec3.hpp"
 	"glm/glm/glm.hpp"
 	<math.h>
 
-1511163035 /home/jakaria/Project/Ubuntu version/Graphics_Project1/material.h
+1511374823 /home/jakaria/Project/Ubuntu version/Graphics_Project1/material.h
 	"ray.h"
 	"hitable.h"
 

@@ -801,11 +801,13 @@
 		<Unit filename="hitable.h" />
 		<Unit filename="hitable_list.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="material.h" />
 		<Unit filename="ray.h" />
 		<Unit filename="sphere.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

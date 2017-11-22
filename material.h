@@ -13,20 +13,16 @@ float schlick(float cosine, float ref_idx)
     return r0 + (1-r0)*pow((1 - cosine),5);
 }
 
-bool refract(const glm::vec3& v, const glm::vec3& n, float ni_over_nt, glm::vec3& refracted)
-{
+bool refract(const glm::vec3& v, const glm::vec3& n, float ni_over_nt, glm::vec3& refracted) {
     glm::vec3 uv = glm::normalize(v);
-    //float dt = glm::dot(uv, n);
-    //float discriminant = 1.0 - ni_over_nt*ni_over_nt*(1-dt*dt);
-    glm::vec3 test = glm::refract(uv, n, ni_over_nt);
-    if (test == glm::vec3(0.0,0.0,0.0))
-    {
-        //refracted = (float)ni_over_nt*(uv - n*(float)dt) - n*(float)sqrt(discriminant);
-        return false;
+    float dt = glm::dot(uv, n);
+    float discriminant = 1.0 - ni_over_nt*ni_over_nt*(1-dt*dt);
+    if (discriminant > 0) {
+        refracted = (float)ni_over_nt*(uv - n*(float)dt) - n*(float)sqrt(discriminant);
+        return true;
     }
     else
-        refracted = test;
-    return true;
+        return false;
 }
 
 glm::vec3 random_in_unit_sphere()
@@ -106,7 +102,7 @@ public:
         {
             outward_normal = rec.normal;
             ni_over_nt = 1.0 / ref_idx;
-            cosine = glm::dot(r_in.direction(), rec.normal) / glm::length(r_in.direction()); // - glm::dot needed
+            cosine = -(glm::dot(r_in.direction(), rec.normal)) / glm::length(r_in.direction()); // - glm::dot needed
 
 
         }
