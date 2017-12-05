@@ -72,7 +72,7 @@ hitable *random_scene() {
         }
     }
 
-    list[i++] = new sphere(glm::vec3(0, 1, 0), glm::vec3(0, 2, 0),  0.0, 1.0,1.0, new dielectric(1.5));
+    list[i++] = new sphere(glm::vec3(0, 1, 0), glm::vec3(0, 1, 0),  0.0, 1.0,1.0, new dielectric(1.5));
     list[i++] = new sphere(glm::vec3(-3, 1, 0), glm::vec3(-3, 1, 0),  0.0, 1.0, 1.0, new lambertian(glm::vec3(0.4, 0.2, 0.1)));
     list[i++] = new sphere(glm::vec3(3, 1, 0), glm::vec3(3, 1, 0), 0.0, 1.0, 1.0, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
 
