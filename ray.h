@@ -9,11 +9,13 @@ class ray
 public:
     glm::vec3 A;
     glm::vec3 B;
+    float timev;
     ray() {}
-    ray(const glm::vec3& a, const glm::vec3& b)
+    ray(const glm::vec3& a, const glm::vec3& b, float t = 0.0)
     {
         A = a;
         B = b;
+        timev = t;
     }
     glm::vec3 origin() const
     {
@@ -26,6 +28,10 @@ public:
     glm::vec3 point_at_parameter(float t) const
     {
         return A + t*B;
+    }
+    float time() const
+    {
+        return timev;
     }
 };
 

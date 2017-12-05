@@ -48,37 +48,36 @@ glm::vec3 color(const ray& r, hitable *world, int depth)
     }
 }
 
-
-/*hitable *random_scene() {
+hitable *random_scene() {
     int n = 500;
     hitable **list = new hitable*[n+1];
-    list[0] =  new sphere(glm::vec3(0,-1000,0), 1000, new lambertian(glm::vec3(0.5, 0.5, 0.5)));
+    list[0] =  new sphere(glm::vec3(0,-1000,0), glm::vec3(0,-1000,0),  0.0, 1.0, 1000,new lambertian(glm::vec3(0.5, 0.5, 0.5)));
     int i = 1;
-    for (int a = -2; a < 2; a++) {
+    for (int a = -3; a < 3; a++) {
         for (int b = -2; b < 2; b++) {
             float choose_mat = drand48();
             glm::vec3 center(a+0.9*drand48(),0.2,b+0.9*drand48());
             if (glm::length(center-glm::vec3(4,0.2,0)) > 0.9) {
                 if (choose_mat < 0.8) {  // diffuse
-                    list[i++] = new sphere(center, 0.2, new lambertian(glm::vec3(drand48()*drand48(), drand48()*drand48(), drand48()*drand48())));
+                    list[i++] = new sphere(center, center, 0.0, 1.0,0.2 , new lambertian(glm::vec3(drand48()*drand48(), drand48()*drand48(), drand48()*drand48())));
                 }
                 else if (choose_mat < 0.95) { // metal
-                    list[i++] = new sphere(center, 0.2,
+                    list[i++] = new sphere(center, center, 0.0, 1.0, 0.2,
                             new metal(glm::vec3(0.5*(1 + drand48()), 0.5*(1 + drand48()), 0.5*(1 + drand48())),  0.5*drand48()));
                 }
                 else {  // glass
-                    list[i++] = new sphere(center, 0.2, new dielectric(1.5));
+                    list[i++] = new sphere(center, center,  0.0, 1.0, 0.2 , new dielectric(1.5));
                 }
             }
         }
     }
 
-    list[i++] = new sphere(glm::vec3(0, 1, 0), 1.0, new dielectric(1.5));
-    list[i++] = new sphere(glm::vec3(-4, 1, 0), 1.0, new lambertian(glm::vec3(0.4, 0.2, 0.1)));
-    list[i++] = new sphere(glm::vec3(4, 1, 0), 1.0, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
+    list[i++] = new sphere(glm::vec3(0, 1, 0), glm::vec3(0, 2, 0),  0.0, 1.0,1.0, new dielectric(1.5));
+    list[i++] = new sphere(glm::vec3(-3, 1, 0), glm::vec3(-3, 1, 0),  0.0, 1.0, 1.0, new lambertian(glm::vec3(0.4, 0.2, 0.1)));
+    list[i++] = new sphere(glm::vec3(3, 1, 0), glm::vec3(3, 1, 0), 0.0, 1.0, 1.0, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
 
     return new hitable_list(list,i);
-}*/
+}
 
 int main()
 {
@@ -92,27 +91,27 @@ int main()
 
     hitable *list[11];
 
-    list[0] = new sphere(glm::vec3(0,0,-1), 0.5, new lambertian(glm::vec3(0.1, 0.2, 0.5)));
-    list[1] = new sphere(glm::vec3(0,-100.5,-1), 100, new lambertian(glm::vec3(0.8, 0.8, 0.0)));
-    list[2] = new sphere(glm::vec3(1,0,-1), 0.5, new metal(glm::vec3(0.8, 0.6, 0.2), 0.2));
-    list[3] = new sphere(glm::vec3(-1,0,-1), 0.5, new dielectric(1.5));
-    list[4] = new sphere(glm::vec3(-1,0,-1), -0.45, new dielectric(1.5)); // -0.45 needed
-    list[5] = new sphere(glm::vec3(0, 1, 0), 1.0, new dielectric(1.5));
-    list[6] = new sphere(glm::vec3(-4, 1, 0), 1.0, new lambertian(glm::vec3(0.4, 0.2, 0.1)));
-    list[7] = new sphere(glm::vec3(4, 1, 0), 1.0, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
-    list[8] = new sphere(glm::vec3(2, 1, 2), 0.8, new dielectric(1.5));
-    list[9] = new sphere(glm::vec3(5, 0, 2), 0.5, new dielectric(1.5));
-    list[10] = new sphere(glm::vec3(5, 0, 0), 0.5, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
+    list[0] = new sphere(glm::vec3(0,0,-1), glm::vec3(0,0,-1),  0.0, 1.0, 0.5, new lambertian(glm::vec3(0.1, 0.2, 0.5)));
+    list[1] = new sphere(glm::vec3(0,-100.5,-1), glm::vec3(0,-100.5,-1),  0.0, 1.0, 100, new lambertian(glm::vec3(0.8, 0.8, 0.0)));
+    list[2] = new sphere(glm::vec3(1,0,-1), glm::vec3(1,0,-1),  0.0, 1.0, 0.5 , new metal(glm::vec3(0.8, 0.6, 0.2), 0.2));
+    list[3] = new sphere(glm::vec3(-1,0,-1), glm::vec3(-1,0,-1),  0.0, 1.0, 0.5 , new dielectric(1.5));
+    list[4] = new sphere(glm::vec3(-1,0,-1), glm::vec3(-1,0,-1), 0.0, 1.0, -0.45, new dielectric(1.5)); // -0.45 needed
+    list[5] = new sphere(glm::vec3(0, 1, 0), glm::vec3(0, 1, 0),  0.0, 1.0, 1.0,new dielectric(1.5));
+    list[6] = new sphere(glm::vec3(-4, 1, 0), glm::vec3(-4, 1, 0),  0.0, 1.0, 1.0 ,new lambertian(glm::vec3(0.4, 0.2, 0.1)));
+    list[7] = new sphere(glm::vec3(4, 1, 0), glm::vec3(4, 1, 0),  0.0, 1.0,1.0, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
+    list[8] = new sphere(glm::vec3(2, 1, 2), glm::vec3(2, 1, 2),  0.0, 1.0, 0.8, new dielectric(1.5));
+    list[9] = new sphere(glm::vec3(5, 0, 2), glm::vec3(5, 0, 2), 0.0, 1.0,  0.5 , new dielectric(1.5));
+    list[10] = new sphere(glm::vec3(5, 0, 0), glm::vec3(5, 0, 0),  0.0, 1.0,0.5, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
 
     hitable *world = new hitable_list(list,11);
-    //world = random_scene();
+    world = random_scene();
 
-    glm::vec3 lookfrom(13,3,4);
+    glm::vec3 lookfrom(8,4,6);
     glm::vec3 lookat(0,0,0);
-    float dist_to_focus = 10.0;
+    float dist_to_focus = 10;
     float aperture = 0.1;
 
-    camera cam(lookfrom, lookat, glm::vec3(0,1,0), 20, float(nx)/float(ny), aperture, dist_to_focus);
+    camera cam(lookfrom, lookat, glm::vec3(0,1,0), 20, float(nx)/float(ny), aperture, dist_to_focus,0.0,1.0);
 
 
     for (int j = ny - 1; j >=0; j--)
