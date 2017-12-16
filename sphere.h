@@ -4,6 +4,8 @@
 #include "hitable.h"
 #include "glm/glm/vec3.hpp"
 #include "glm/glm/glm.hpp"
+#include "texture.h"
+#include "light.h"
 
 class sphere: public hitable
 {

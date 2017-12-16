@@ -42,7 +42,13 @@ class material
 {
 public:
     virtual bool scatter(const ray& r_in, const hit_record& rec, glm::vec3& attenuation, ray& scattered) const = 0;
+    virtual glm::vec3 emitted(float u, float v, const glm::vec3& p) const
+    {
+        return glm::vec3(0,0,0);
+    }
 };
+
+
 
 class lambertian : public material
 {

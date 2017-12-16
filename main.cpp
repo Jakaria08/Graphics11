@@ -11,6 +11,7 @@
 #include "camera.h"
 #include "material.h"
 #include "texture.h"
+#include "light.h"
 
 using namespace std;
 
@@ -30,22 +31,21 @@ glm::vec3 color(const ray& r, hitable *world, int depth)
     {
         ray scattered;
         glm::vec3 attenuation;
+        glm::vec3 emitted = rec.mat_ptr->emitted(rec.u, rec.v, rec.p);
 
         if(depth < 50 && rec.mat_ptr->scatter(r, rec, attenuation, scattered))
         {
-            return attenuation*color(scattered, world, depth+1);
+            return emitted+attenuation*color(scattered, world, depth+1);
         }
         else
         {
-            return glm::vec3(0,0,0);
+            return emitted;
         }
     }
 
     else
     {
-        glm::vec3 unit_direction = glm::normalize(r.direction());
-        float t = 0.5f*(unit_direction.y + 1.0f);
-        return (1.0f-t)*glm::vec3(1.0, 1.0, 1.0) + t*glm::vec3(0.5, 0.7, 1.0);
+        return glm::vec3(0,0,0);
     }
 }
 
@@ -77,7 +77,7 @@ hitable *random_scene() {
     list[i++] = new sphere(glm::vec3(0, 1, 0), glm::vec3(0, 1, 0),  0.0, 1.0,1.0, new dielectric(1.5));
     list[i++] = new sphere(glm::vec3(-3, 1, 0), glm::vec3(-3, 1, 0),  0.0, 1.0, 1.0, new lambertian(new constant_texture(glm::vec3(0.4, 0.2, 0.1))));
     list[i++] = new sphere(glm::vec3(3, 1, 0), glm::vec3(3, 1, 0), 0.0, 1.0, 1.0, new metal(glm::vec3(0.7, 0.6, 0.5), 0.0));
-
+    list[i++] = new sphere(glm::vec3(0,7,0), glm::vec3(0,7,0), 0.0, 1.0, 2.0, new diffuse_light(new constant_texture(glm::vec3(4,4,4))));
     return new hitable_list(list,i);
 }
 
@@ -87,7 +87,7 @@ int main()
 
     int nx = 200;
     int ny = 100;
-    int ns = 100;
+    int ns = 200;
 
     cout<< "Creating Image................\n";
 
