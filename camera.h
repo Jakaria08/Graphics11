@@ -42,7 +42,7 @@ public:
         glm::vec3 rd = lens_radius*random_in_unit_disk();
         glm::vec3 offset = u * rd.x + v * rd.y;
         float time = time0 + drand48()*(time1-time0);
-        return ray(origin + offset, lower_left_corner + s*horizontal + t*vertical - origin - offset);
+        return ray(origin + offset, lower_left_corner + s*horizontal + t*vertical - origin - offset,time);
     }
 
     glm::vec3 lower_left_corner;
